@@ -7,8 +7,6 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 #title
-st.set_page_config(page_title="LinkedIn User Prediction App")
-st.image("LinkedIn_Logo.png")
 st.markdown("Welcome to the LinkedIn User Analytics App. The goal of this app is to predict whether an individual is a LinkedIn User, while providing a percent prediction based on our Machine Learning Model.")
 
 #take input for income
@@ -44,9 +42,9 @@ educ2 = st.selectbox("What Is Your Education Level?",
             "High school graduate (Grade 12 with diploma or GED certificate)",
             "Some college, no degree (includes some community college)", 
             "Two-year associate degree from a college or university",
-            "Four-year college or university degree/Bachelorâs degree (e.g., BS, BA, AB)",
+            "Four-year college or university degree/Bachelor's degree (e.g., BS, BA, AB)",
             "Some postgraduate or professional schooling, no postgraduate degree (e.g. some graduate school)",
-            "Postgraduate or professional degree, including masterâs, doctorate, medical or law degree (e.g., MA, MS, PhD, MD, JD)"])
+            "Postgraduate or professional degree, including master's, doctorate, medical or law degree (e.g., MA, MS, PhD, MD, JD)"])
 #translate input for education
 if educ2 == "Less than high school (Grades 1-8 or no formal schooling)":
     educ2 = 1
@@ -58,7 +56,7 @@ elif educ2 == "Some college, no degree (includes some community college)":
     educ2 = 4
 elif educ2 == "Two-year associate degree from a college or university":
     educ2 = 5
-elif educ2 == "Four-year college or university degree/Bachelorâs degree (e.g., BS, BA, AB)":
+elif educ2 == "Four-year college or university degree/Bachelor's degree (e.g., BS, BA, AB)":
     educ2 = 6
 elif educ2 == "Some postgraduate or professional schooling, no postgraduate degree (e.g. some graduate school)":
     educ2 = 7
